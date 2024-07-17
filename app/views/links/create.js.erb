@@ -1,2 +1,4 @@
-var element = document.getElementById('short-link')
-element.innerHTML = "<%= @link.shortended_url %>"
+let element = document.getElementById('short-link')
+
+let html = "<%= j render 'link', link: @link.shortended_url %>"
+element.innerHTML = html
