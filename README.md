@@ -1,6 +1,5 @@
 <div align='center'>
     <h1>Shorter</h1>
-    <img src='shorter.png' width='250' height='250' />
     <p>Shorter is a URL shortening service that reduces the length of a URL, making it easier to share and remember. Built using Ruby on Rails TailwindCSS, Shorter provides a simple and efficient way to shorten URLs.</p>
 </div>
 
