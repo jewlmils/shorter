@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
- post "/links" => "links#create"
+  root to: "home#index"
+  post "/links" => "links#create"
 end
