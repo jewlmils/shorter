@@ -11,7 +11,7 @@ class Link < ApplicationRecord
     end
 
     def shortened_url
-        "http://localhost:3000/#{lookup_code}"
+        "#{Rails.application.config.url_options[:host]}/#{lookup_code}"
     end
 
 end
