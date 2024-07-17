@@ -12,6 +12,8 @@ gem "stimulus-rails"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 gem "tailwindcss-rails", "~> 2.6"
+gem "jbuilder"
+gem 'jquery-rails'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
@@ -21,6 +23,7 @@ end
 
 group :development do
   gem "web-console"
+  gem "pry-rails"
 end
 
 group :test do
