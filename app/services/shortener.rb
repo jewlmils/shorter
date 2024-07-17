@@ -10,7 +10,7 @@ class Shortener
     end
 
     def generate_short_link
-        Link.create!(original_url: url, lookup_code: lookup_code)
+        Link.create(original_url: url, lookup_code: lookup_code)
     end
 
     def lookup_code
