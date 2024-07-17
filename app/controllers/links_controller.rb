@@ -3,8 +3,10 @@ class LinksController < ApplicationController
     shortener = Shortener.new(link_params[:original_url])
     @link = shortener.generate_short_link
 
-    respond_to do |format|
-      format.js
+    if @link.persisted?
+      respond_to :js
+    else
+      render template: 'links/error', formats: [:js]
     end
   end
 
